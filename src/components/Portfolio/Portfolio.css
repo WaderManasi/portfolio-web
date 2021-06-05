@@ -1,0 +1,201 @@
+.portfolio{
+    background:#02040f center / cover;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    color: #d9d9d9;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+}
+h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 20px 0 20px 0;
+}
+/*      */
+.container {
+    width:90%;
+    margin:0 auto;
+  }
+  input[type="radio"] {
+      display:none;
+  }
+  label:hover{
+    background-color: #ffc400;
+    color: #02040f;
+    transition: .6s ease;
+  }
+  label {
+    width:23%;
+    float:left;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    text-align:center;
+    font-weight: 500;
+    background:transparent;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    color:#ffc400;
+    border: 2px solid #ffc400;
+    padding:0.5%;
+    margin:1%;
+    margin-bottom:30px;
+    cursor:pointer;
+  }
+  input[type="radio"][id="blogs"]:checked + label {
+    background:#ffc400;
+    color:#02040f;
+    font-weight: 600;
+  }
+  input[type="radio"][id="static"]:checked + label {
+    background:#ffc400;
+    color:#02040f;
+    font-weight: 600;
+  }
+  input[type="radio"][id="reset"]:checked + label {
+    background:#ffc400;
+    color:#02040f;
+    font-weight: 600;
+  }
+  input[type="radio"][id="dynamic"]:checked + label {
+    background:#ffc400;
+    color:#02040f;
+    font-weight: 600;
+  }
+  input[type="radio"][id="blogs"]:checked ~ .static, input[type="radio"][id="blogs"]:checked ~ .dynamic {
+    width:0;
+    height:0;
+    padding:0;
+    margin:0;
+    opacity:0;
+  }
+
+  input[type="radio"][id="static"]:checked ~ .blogs, input[type="radio"][id="static"]:checked ~ .dynamic {
+    width:0;
+    height:0;
+    padding:0;
+    margin:0;
+    opacity:0;
+  }
+ 
+  input[type="radio"][id="dynamic"]:checked ~ .blogs, input[type="radio"][id="dynamic"]:checked ~ .static {
+    width:0;
+    height:0;
+    padding:0;
+    margin:0;
+    opacity:0;
+  }
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 5px;
+    color: #02040f;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+  }
+  .tile {
+    position: relative;
+    width:23%;
+    height:33vh;
+    float:left;
+    transition:all 1s;
+    margin:1%;
+    padding:0.5%;
+  }
+ .blogs,.static,.dynamic{
+     background-color: #d9d9d9;
+     color: #02040f;
+     padding: 0;
+ }
+.image{
+  height: 90%;
+  width: 100%;
+  display: block;
+  opacity: 1;
+  backface-visibility: hidden;
+}
+.info{
+  height: 10%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #02040f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tile:hover img{
+  opacity: .2;
+  transition: .4s ease;
+}
+.tile:hover .middle{
+  opacity: 1;
+  transition: .3s ease;
+  cursor:default;
+}
+
+.info>a{
+  background-color: #02040f;
+  color: #d9d9d9;
+  text-decoration: none;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0px;
+  margin: 0;
+  font-weight: 400;
+  border: 1px solid #d9d9d9;
+  transition: .5s ease;
+}
+.info>a:hover{
+  background-color: #ffc400;
+  color: #02040f;
+  text-decoration: none;
+  font-weight: 500;
+  border: 1px solid #ffc400;
+}
+.image>img{
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.image>svg{
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.image>iframe{
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+@media only screen and (max-width:600px) {
+    .portfolio{
+     height:40vh;
+    }
+ }
+@media only screen and (max-width:768px) {
+   .portfolio{
+    height:50vh;
+   }
+   h3{
+       font-size: 1.5rem;
+   }
+   .tile {
+    width:13%;
+    height:15vh;
+    float:left;
+    transition:all 1s;
+    margin:0.5%;
+    padding:0.5%;
+  }
+  .label{
+      width: 13%;
+      font-size: .2rem;
+  }
+}

@@ -1,0 +1,95 @@
+.main {
+  background: #02040f center / cover;
+  padding: 0;
+  margin: 0;
+  color: #f7f3f3;
+  height: 86vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.lin {
+  color: #ffdb66;
+  font-size: 1.5em;
+  font-family: "roboto mono";
+}
+h1 > span {
+  color: #ffc400;
+  text-shadow: 1px 1px 1px #631351;
+}
+h2 {
+  text-shadow: 1px 1px 1px #631351;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  position: relative;
+}
+.name {
+  text-shadow: 2px 2px 2px #631351;
+  font-size: 4.5rem;
+}
+.child {
+  background: transparent;
+  width: 50%;
+  height: 51vh;
+  top: 15%;
+  position: absolute;
+}
+.role {
+  font-size: 25px;
+  color: #d9d9d9;
+  overflow: hidden;
+}
+.line {
+  color: #d9d9d9;
+  font-family: "Dancing script";
+  font-size: 2.8em;
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    height: 40vh;
+  }
+  .child {
+    width: 70%;
+  }
+  .line {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main {
+    height: 50vh;
+  }
+  .lin {
+    font-size: 1rem;
+  }
+  .child {
+    background: transparent;
+    width: 60%;
+    height: 31vh;
+    top: 15%;
+    position: absolute;
+  }
+  .line {
+    font-size: 1.5rem;
+  }
+  .name {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+.custom-shape-divider-bottom-1622639084 {
+  fill: #d9d9d9;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}

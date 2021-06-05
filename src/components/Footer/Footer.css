@@ -1,0 +1,37 @@
+.footer{
+    background-color: #31081f;
+}
+.display{
+    font-family: 'Dancing script';
+    font-size: x-large;
+    color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    padding: 16px 0 16px 0;
+    text-shadow: 2px 2px 3px #000000;
+}
+.foot{
+    background-color: #3f132a;
+    font-size: small;
+    color: rgb(138, 128, 128);
+    display: flex;
+    justify-content: center;
+    padding: 5px 0 5px 0;
+}
+@media only screen and (max-width:600px) {
+    .footer{
+     height:1vh;
+    }
+    .display{
+        font-size: 1rem;
+        padding: 10px 0 3px 0;
+    }
+    .foot{
+        font-size: x-small;
+    }
+ }
+@media only screen and (max-width:768px) {
+   .footer{
+    height:6vh;
+   }
+}

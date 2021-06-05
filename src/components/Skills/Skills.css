@@ -1,0 +1,165 @@
+.skills {
+  background: #3f132a center / cover;
+  padding: 0;
+  margin: 0;
+  color: #f7f3f3;
+  height: 110vh;
+  position: relative;
+}
+.s > h2 {
+  top: 0;
+}
+.icon {
+  height: 35px;
+  width: 35px;
+  padding: 2px;
+}
+
+:root {
+  --main-color: #ddaa03;
+  --second-color: #02040f;
+  --third-color: #d9d9d9;
+  --bg-color: #3f132a;
+  --main-grid: repeat(auto-fill, minmax(300px, 1fr));
+  --main-padding: 40px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 20vh;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.skills {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+  background-color: var(--bg-color);
+  text-align: center;
+}
+
+.skills .text {
+  padding-bottom: 20px;
+}
+
+.skills h2 {
+  color: #d9d9d9;
+}
+.skills h2 span {
+  color: var(--main-color);
+}
+.skills .skill-card {
+  display: grid;
+  grid-template-columns: var(--main-grid);
+  grid-gap: 0px;
+  margin-top: 60px;
+}
+
+.skills .skill-card .card {
+  padding: 25px;
+  text-align: center;
+  background-color: var(--second-color);
+  border: 2px solid var(--main-color);
+  color: var(--third-color);
+  transition: 1s;
+  position: relative;
+}
+
+.skills .card h4 {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-size: 25px;
+  font-weight: 500;
+}
+.skills .card i {
+  font-size: 37px;
+  padding: 15px;
+  width: 60px;
+  height: 60px;
+  color: var(--second-color);
+  background-color: var(--main-color);
+  position: absolute;
+  top: calc(-60px / 2);
+  transform: rotate(45deg);
+  left: 39%;
+  transition: 1s;
+  border: 1px solid var(--main-color);
+  margin: 0%;
+}
+
+.skills .card:hover {
+  background-color: #d9d9d9;
+}
+
+.skills .card:hover i {
+  transform: rotate(0deg);
+  color: #d9d9d9;
+}
+
+.skills .card:hover h4,
+.skills .card:hover p {
+  color: var(--second-color);
+  font-weight: 600;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/**/
+.custom-shape-divider-bottom-1622641132 {
+  fill: #02040f;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1622641132 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 35px;
+}
+@media only screen and (max-width: 600px) {
+  .skills {
+    height: 40vh;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .skills {
+    height: 50vh;
+  }
+  .skills .card i {
+    font-size: 22px;
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+    color: var(--second-color);
+    background-color: var(--main-color);
+    position: absolute;
+    top: calc(-35px / 2);
+    transform: rotate(45deg);
+    left: 29%;
+    transition: 1s;
+    border: 1px solid var(--main-color);
+  }
+  .skills h2 {
+    font-size: 15px;
+    color: var(--second-color);
+    padding-bottom: 20px;
+  }
+}
