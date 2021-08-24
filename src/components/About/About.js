@@ -115,7 +115,7 @@ function About() {
               </a>
             </div>
             <div>
-              <a href="/leetcode" target="_blank" height="37px" width="37px">
+              <a href="https://leetcode.com/manasiwader/" target="_blank" height="37px" width="37px">
                 <svg
                   class="icon"
                   fill="#FFA116"
