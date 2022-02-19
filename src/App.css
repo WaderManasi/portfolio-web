@@ -21,7 +21,7 @@
   border-radius: 30px;
 }
 .App {
-  background-color: #31081f;
+  background-color: #02040f
 }
 .mf-social-side-list {
   position: fixed;
@@ -73,6 +73,9 @@ box-shadow: 4px 0px 5px 0px #2D2D2D;
 }
 .mf-social-side-list ul li a[href*='twitter'] {
   background: #00acee;
+}
+.mf-social-side-list ul li a[href*='youtube'] {
+  background: #910209;
 }
 
 /**/
