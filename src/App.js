@@ -54,9 +54,9 @@ function App() {
             </Tooltip>
           </li>
           <li>
-            <Tooltip title="Email" placement="right">
-              <a href="mailto:manasiwader@gmail.com" target="_blank">
-                <i class="fa fa-envelope"></i>
+            <Tooltip title="YouTube" placement="right">
+              <a href="https://www.youtube.com/channel/UCKl05Nfk0wOFqZbSdw09ofA" target="_blank">
+                <i class="fab fa-youtube"></i>
               </a>
             </Tooltip>
           </li>
@@ -67,6 +67,14 @@ function App() {
               </a>
             </Tooltip>
           </li>
+          <li>
+            <Tooltip title="Email" placement="right">
+              <a href="mailto:manasiwader@gmail.com" target="_blank">
+                <i class="fa fa-envelope"></i>
+              </a>
+            </Tooltip>
+          </li>
+          
         </ul>
       </div>
 
